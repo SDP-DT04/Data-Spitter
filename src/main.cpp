@@ -4,16 +4,19 @@
 
 void setup()
 {
-  Serial.begin(115200);
+  delay(2000);
+  Serial.begin(9600);
   while(!Serial);
-  Serial.println("hello");
 
   Serial.println('START');
-  for (int i=0; i < DATA_LEN; ++i)
+  Serial.println(11938453);
+  Serial.println(50);
+  Serial.println(16.2);
+  for (int i=0; i < DATA_LEN-1; ++i)
   {
    Serial.println(data[i]);
   }
-  Serial.println('Stop');
+  Serial.println('STOP');
 }
 
 void loop()
